@@ -1,0 +1,48 @@
+@import '../variables.scss';
+
+.c-section {
+    &--todo {
+        padding: 3rem 0;
+
+        .c-list {
+            border: 1px solid $gray;
+
+            ul {
+                list-style: none;
+
+                li {
+                    border-bottom: 1px solid $gray;
+                    padding: 0.5rem 1rem;
+                }
+            }
+
+            &__bottom {
+                padding: 0.5rem 1rem;
+            }
+
+            .c-button {
+                border: none;
+                border-radius: 5px;
+                margin-left: 0.5rem;
+                transition: all 0.3s;
+                font-size: 14px;
+                padding: 0.3rem 0.7rem;
+    
+                &--big {
+                    font-size: 18px;
+                }
+    
+                &:hover {
+                    background: $dark;
+                    color: $white;
+                }
+            }
+        }
+
+        .c-task {
+            &__text {
+                max-width: calc(100% - 110px);
+            }
+        }
+    }
+}
